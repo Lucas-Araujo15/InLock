@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\fic\\.nuget\\packages\\": {}
+    "C:\\Users\\Lucas Araujo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fic\\Desktop\\InLock\\senai.inlock.webApi\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas Araujo\\Desktop\\InLock\\senai.inlock.webApi\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
       "projectName": "senai.inlock.webApi",
-      "projectPath": "C:\\Users\\fic\\Desktop\\InLock\\senai.inlock.webApi\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
-      "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fic\\Desktop\\InLock\\senai.inlock.webApi\\senai.inlock.webApi\\obj\\",
+      "projectPath": "C:\\Users\\Lucas Araujo\\Desktop\\InLock\\senai.inlock.webApi\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
+      "packagesPath": "C:\\Users\\Lucas Araujo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lucas Araujo\\Desktop\\InLock\\senai.inlock.webApi\\senai.inlock.webApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lucas Araujo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

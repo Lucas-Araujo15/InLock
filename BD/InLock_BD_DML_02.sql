@@ -15,6 +15,6 @@ INSERT INTO TiposUsuarios (NomeTipoUsuario)
 VALUES ('ADMINISTRADOR') , ('CLIENTE');
 GO
 
-INSERT INTO Usuarios (Email, Senha, IdTipoUsuario)
-VALUES ('cliente@cliente.com', '123', 2), ('admin@admin.com', '321', 1)
+INSERT INTO Usuarios (NomeUsuario, Email, Senha, IdTipoUsuario)
+VALUES ('Fernando','cliente@cliente.com', '12345', 2), ('Lucas','admin@admin.com', '54321', 1)
 GO
