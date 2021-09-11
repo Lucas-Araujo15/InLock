@@ -1,0 +1,744 @@
+{
+	"info": {
+		"_postman_id": "0e414dee-e7a1-41e8-ac9a-1fb84febac8b",
+		"name": "senai.inlock.webApI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Estudios",
+			"item": [
+				{
+					"name": "EstudiosListar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMyNDQ3LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.XmTj0DJebkDH_g2qeiwti_7vMHleE_uRJmJv-nhcmt4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/estudios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EstudiosListarId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwMDIyLCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.l8CGZdBWZY5SlrtOfrCMzIcy4dYOsm8jAt7nz4cq17Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EstudiosCadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIxIiwibmFtZSI6IkZlcm5hbmRvIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMTMyNzY1NCwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFQSSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBUEkifQ.3N06YOVSzq-d1GFOOVaoW2hu-8-3p-aZIQFprqZ7s-U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NomeEstudio\": \"Actvision\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/estudios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EstudiosDeletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIxIiwibmFtZSI6IkZlcm5hbmRvIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMTMyNzY1NCwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFQSSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBUEkifQ.3N06YOVSzq-d1GFOOVaoW2hu-8-3p-aZIQFprqZ7s-U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EstudiosAtualizarIdCorpo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwMDIyLCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.l8CGZdBWZY5SlrtOfrCMzIcy4dYOsm8jAt7nz4cq17Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdEstudio\": 5,\r\n    \"NomeEstudio\": \"ActVision\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/estudios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jogos",
+			"item": [
+				{
+					"name": "JogosListar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIxIiwibmFtZSI6IkZlcm5hbmRvIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMTMzMjcxMSwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFQSSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBUEkifQ.x1byVEZnyqJSBwOZq250JkWTNUYyhbXPbm7ZDyVhzaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/jogos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "JogosListarId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIxIiwibmFtZSI6IkZlcm5hbmRvIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMTMzMjcxMSwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFQSSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBUEkifQ.x1byVEZnyqJSBwOZq250JkWTNUYyhbXPbm7ZDyVhzaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/jogos/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "JogosCadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIxIiwibmFtZSI6IkZlcm5hbmRvIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMTMzMjcxMSwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFQSSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBUEkifQ.x1byVEZnyqJSBwOZq250JkWTNUYyhbXPbm7ZDyVhzaA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idEstudio\": 2,\r\n    \"nomeJogo\": \"Bully\",\r\n    \"descricaoJogo\": \"Um jogo ambientado no ambiente escolar\",\r\n    \"dataLancamento\": \"2004-12-29\",\r\n    \"valorJogo\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/jogos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "JogosDeletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwMzkzLCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.Y2_huon6bXlHCTNLT7Ij2HqFtSqNPH9IPPolytUME_U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/jogos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "JogosAtualizarCorpo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwNjIxLCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.tHlfKvtfLELGXeuAwAo72VO63hxV0O0GleTDEftlYxw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idJogo\": 4,\r\n    \"idEstudio\": 2,\r\n    \"nomeJogo\": \"LA Noire\",\r\n    \"descricaoJogo\": \"É um jogo inspirado nos enredos e estéticas dos films noir\",\r\n    \"dataLancamento\": \"2012-12-29T00:00:00\",\r\n    \"valorJogo\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/jogos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TiposUsuario",
+			"item": [
+				{
+					"name": "TiposUsuariosListar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwNzE5LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.hefv5_HG0PDXe-PjEagz_roCezuLeqzw0f1SwFUH0Aw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/tiposusuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposusuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TiposUsuariosListarid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwNzE5LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.hefv5_HG0PDXe-PjEagz_roCezuLeqzw0f1SwFUH0Aw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/tiposusuarios/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposusuarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TiposUsuariosCadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwNzE5LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.hefv5_HG0PDXe-PjEagz_roCezuLeqzw0f1SwFUH0Aw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NomeTipoUsuario\": \"VENDEDOR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tiposusuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposusuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TiposUsuariosDeletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwNzE5LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.hefv5_HG0PDXe-PjEagz_roCezuLeqzw0f1SwFUH0Aw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/tiposusuarios/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposusuarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TiposUsuariosAtualizarCorpo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwNzE5LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.hefv5_HG0PDXe-PjEagz_roCezuLeqzw0f1SwFUH0Aw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdTipoUsuario\": 1,\r\n    \"NomeTipoUsuario\": \"ADMINISTRADOR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tiposusuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposusuarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "UsuariosListar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMxMzI0LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.ByFn9efQ7O21ct0kl9flfzXG-ErN1eOleELHHY_PMtM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UsuariosListarId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMxMzI0LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.ByFn9efQ7O21ct0kl9flfzXG-ErN1eOleELHHY_PMtM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/usuarios/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UsuariosCadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwNzE5LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.hefv5_HG0PDXe-PjEagz_roCezuLeqzw0f1SwFUH0Aw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idUsuario\": 2,\r\n    \"nomeUsuario\": \"Saulo\",\r\n    \"idTipoUsuario\": 1,\r\n    \"email\": \"admin1@admin1.com\",\r\n    \"senha\": \"67890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UsuarioDeletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwNzE5LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.hefv5_HG0PDXe-PjEagz_roCezuLeqzw0f1SwFUH0Aw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/usuarios/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UsuariosAtualizarCorpo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwNzE5LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.hefv5_HG0PDXe-PjEagz_roCezuLeqzw0f1SwFUH0Aw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idUsuario\": 4,\r\n    \"nomeUsuario\": \"Odirlei\",\r\n    \"idTipoUsuario\": 2,\r\n    \"email\": \"cliente2@cliente2.com\",\r\n    \"senha\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Logar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"cliente@cliente.com\",\r\n    \"senha\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/usuarios/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"usuarios",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

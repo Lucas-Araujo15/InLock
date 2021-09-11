@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.inlock.webApi</name>
+    </assembly>
+    <members>
+        <member name="M:senai.inlock.webApi.Interfaces.IEstudiosRepository.Cadastrar(senai.inlock.webApi.Domains.EstudiosDomain)">
+            <summary>
+            Cadastra um novo estúdio
+            </summary>
+            <param name="estudio">Objeto EstudiosDomain que será cadastrado</param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IEstudiosRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um estúdio em específico
+            </summary>
+            <param name="id">ID do estúdio a ser deletado</param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IEstudiosRepository.Atualizar(senai.inlock.webApi.Domains.EstudiosDomain)">
+            <summary>
+            Atualiza as informações de um estúdio já existente
+            </summary>
+            <param name="novoEstudio">Objeto EstudiosDomain com as novas informações</param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IEstudiosRepository.ListarTodos">
+            <summary>
+            Lista todos os estúdios cadastrados
+            </summary>
+            <returns>Retorna uma lista de estúdios</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IEstudiosRepository.ListarPorId(System.Int32)">
+            <summary>
+            Lista um estúdio em específico
+            </summary>
+            <param name="id">ID do estúdio que será listado</param>
+            <returns>Objeto EstudiosDomain que foi encontrado</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IJogosRepository.Cadastrar(senai.inlock.webApi.Domains.JogosDomain)">
+            <summary>
+            Cadastra um novo jogo
+            </summary>
+            <param name="jogo"></param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IJogosRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um jogo específico
+            </summary>
+            <param name="id">ID do jogo a ser deletado</param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IJogosRepository.Atualizar(senai.inlock.webApi.Domains.JogosDomain)">
+            <summary>
+            Atualiza as informações de um jogo específico
+            </summary>
+            <param name="novoJogo">Objeto JogosDomain com as novas informações</param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IJogosRepository.ListarTodos">
+            <summary>
+            Lista todos os jogos cadastrados
+            </summary>
+            <returns>Uma lista de jogos</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IJogosRepository.ListarPorId(System.Int32)">
+            <summary>
+            Lista um jogo específico
+            </summary>
+            <param name="id">ID do jogo a ser procurado</param>
+            <returns>Objeto JogosDomain que foi encontrado</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.ITiposUsuariosRepository.Cadastrar(senai.inlock.webApi.Domains.TiposUsuariosDomain)">
+            <summary>
+            Cadastra um novo tipo de usuário
+            </summary>
+            <param name="TipoUsuario">Objeto TiposUsuariosDomain que será cadastrado</param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.ITiposUsuariosRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um tipo de usuário em específico
+            </summary>
+            <param name="id">ID do tipo de usuário que será deletado</param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.ITiposUsuariosRepository.Atualizar(senai.inlock.webApi.Domains.TiposUsuariosDomain)">
+            <summary>
+            Atualiza as informações de um tipo de usuário específico
+            </summary>
+            <param name="novoTipoUsuario"></param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.ITiposUsuariosRepository.ListarTodos">
+            <summary>
+            Lista todos os tipos de usuários cadastrados
+            </summary>
+            <returns>Lista de tipos de usuários</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.ITiposUsuariosRepository.ListarPorId(System.Int32)">
+            <summary>
+            Lista um tipo de usuário em específico
+            </summary>
+            <param name="id">ID do tipo de usuário a ser listado</param>
+            <returns>Objeto TiposUsuariosDomain que foi encontrado</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IUsuariosRepository.Cadastrar(senai.inlock.webApi.Domains.UsuariosDomain)">
+            <summary>
+            Cadastra um novo usuário 
+            </summary>
+            <param name="Usuario">Objeto UsuariosDomain a ser cadastrado</param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IUsuariosRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuário em específico
+            </summary>
+            <param name="id">ID do usuário a ser deletado</param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IUsuariosRepository.Atualizar(senai.inlock.webApi.Domains.UsuariosDomain)">
+            <summary>
+            Atualiza as informações de um usuário específico
+            </summary>
+            <param name="novoUsuario">Objeto UsuariosDomain com as novas informações</param>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IUsuariosRepository.ListarTodos">
+            <summary>
+            Lista todos os usuários cadastrados
+            </summary>
+            <returns>Retorna uma lista de usuários</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IUsuariosRepository.ListarPorId(System.Int32)">
+            <summary>
+            Lista um usuário específico
+            </summary>
+            <param name="id">ID do usuário a ser listado</param>
+            <returns>Objeto UsuariosDomain que foi procurado</returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IUsuariosRepository.Autenticar(System.String,System.String)">
+            <summary>
+            Realiza a validação do usuário
+            </summary>
+            <param name="email">Endereço de email do usuário</param>
+            <param name="senha">Senha do usuário</param>
+            <returns>Usuário correspondente ao login</returns>
+        </member>
+    </members>
+</doc>

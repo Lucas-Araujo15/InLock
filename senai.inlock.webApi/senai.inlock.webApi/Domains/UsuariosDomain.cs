@@ -10,10 +10,8 @@ namespace senai.inlock.webApi.Domains
     {
         public int IdUsuario { get; set; }
 
-        [Required]
         public string NomeUsuario { get; set; }     
 
-        [Required]
         public int IdTipoUsuario { get; set; }
 
         [Required(ErrorMessage = "Informe o seu e-mail")]

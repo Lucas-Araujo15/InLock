@@ -10,7 +10,7 @@ namespace senai.inlock.webApi.Repositories
 {
     public class EstudiosRepository : IEstudiosRepository
     {
-        private string stringConexao = @"Data source=DESKTOP-SV3M4A7\SQLEXPRESS; initial catalog=catalogo_m; user id = sa; pwd=Senai@132";
+        private string stringConexao = @"Data source=DESKTOP-SV3M4A7\SQLEXPRESS; initial catalog=InLock_Games; user id = sa; pwd=Senai@132";
         public void Atualizar(EstudiosDomain novoEstudio)
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
@@ -22,7 +22,7 @@ namespace senai.inlock.webApi.Repositories
                 using (SqlCommand cmd = new SqlCommand(queryUpdate, con))
                 {
                     cmd.Parameters.AddWithValue("@NomeEstudio", novoEstudio.NomeEstudio);
-                    cmd.Parameters.AddWithValue("@IdEstudio", novoEstudio.NomeEstudio);
+                    cmd.Parameters.AddWithValue("@IdEstudio", novoEstudio.IdEstudio);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -98,7 +98,7 @@ namespace senai.inlock.webApi.Repositories
 
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelectALL = "SELECT IdEstudio, NomeEstudio FROM Estudio";
+                string querySelectALL = "SELECT IdEstudio, NomeEstudio FROM Estudios";
 
                 con.Open();
 

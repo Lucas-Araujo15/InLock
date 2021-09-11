@@ -10,7 +10,7 @@ namespace senai.inlock.webApi.Repositories
 {
     public class TiposUsuariosRepository : ITiposUsuariosRepository
     {
-        private string stringConexao = @"Data source=DESKTOP-SV3M4A7\SQLEXPRESS; initial catalog=catalogo_m; user id = sa; pwd=Senai@132";
+        private string stringConexao = @"Data source=DESKTOP-SV3M4A7\SQLEXPRESS; initial catalog=InLock_Games; user id = sa; pwd=Senai@132";
         public void Atualizar(TiposUsuariosDomain novoTipoUsuario)
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
