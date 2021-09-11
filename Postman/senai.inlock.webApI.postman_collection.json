@@ -16,7 +16,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMyNDQ3LCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.XmTj0DJebkDH_g2qeiwti_7vMHleE_uRJmJv-nhcmt4",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIxIiwibmFtZSI6IkZlcm5hbmRvIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMTM5NTY5OSwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFQSSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBUEkifQ.N72Vsw-bBvIeK3S9zvHsaBrrYD6DEwU7sCdrWva7TPw",
 									"type": "string"
 								}
 							]
@@ -46,7 +46,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjIiLCJuYW1lIjoiTHVjYXMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNjMxMzMwMDIyLCJpc3MiOiJzZW5haS5pbmxvY2sud2ViQVBJIiwiYXVkIjoic2VuYWkuaW5sb2NrLndlYkFQSSJ9.l8CGZdBWZY5SlrtOfrCMzIcy4dYOsm8jAt7nz4cq17Y",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIxIiwibmFtZSI6IkZlcm5hbmRvIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMTM5NzIzMSwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFQSSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBUEkifQ.PjQU2yjA-YQJPvH8MLL8fn5jmHaeBWBb5T64nKXJQW0",
 									"type": "string"
 								}
 							]
@@ -177,6 +177,37 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "EstudiosListarComJogos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIxIiwibmFtZSI6IkZlcm5hbmRvIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMTM5NzIzMSwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFQSSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBUEkifQ.PjQU2yjA-YQJPvH8MLL8fn5jmHaeBWBb5T64nKXJQW0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/listajogos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"listajogos"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -191,7 +222,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIxIiwibmFtZSI6IkZlcm5hbmRvIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMTMzMjcxMSwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFQSSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBUEkifQ.x1byVEZnyqJSBwOZq250JkWTNUYyhbXPbm7ZDyVhzaA",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaWVudGVAY2xpZW50ZS5jb20iLCJqdGkiOiIxIiwibmFtZSI6IkZlcm5hbmRvIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMTM5NzIzMSwiaXNzIjoic2VuYWkuaW5sb2NrLndlYkFQSSIsImF1ZCI6InNlbmFpLmlubG9jay53ZWJBUEkifQ.PjQU2yjA-YQJPvH8MLL8fn5jmHaeBWBb5T64nKXJQW0",
 									"type": "string"
 								}
 							]

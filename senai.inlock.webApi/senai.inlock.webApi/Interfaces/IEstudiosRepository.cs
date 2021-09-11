@@ -38,5 +38,11 @@ namespace senai.inlock.webApi.Interfaces
         /// <param name="id">ID do estúdio que será listado</param>
         /// <returns>Objeto EstudiosDomain que foi encontrado</returns>
         EstudiosDomain ListarPorId(int id);
+
+        /// <summary>
+        /// Lista todos os estúdios e inclui a lista de jogos daquele determinado estúdio
+        /// </summary>
+        /// <returns>Lista de estúdios</returns>
+        List<EstudiosDomain> ListarComJogos();
     }
 }

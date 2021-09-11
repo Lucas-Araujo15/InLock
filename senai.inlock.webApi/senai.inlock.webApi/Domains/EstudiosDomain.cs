@@ -12,5 +12,7 @@ namespace senai.inlock.webApi.Domains
 
         [Required]
         public string NomeEstudio { get; set; }
+
+        public List<JogosDomain> listaDeJogos { get; set; }
     }
 }

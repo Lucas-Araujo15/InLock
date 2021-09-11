@@ -45,6 +45,13 @@ namespace senai.inlock.webApi.Controllers
             return Ok(listaEstudios);
         }
 
+        [HttpGet("listajogos")]
+        public IActionResult GetWithGames()
+        {
+            List<EstudiosDomain> listaEstudios = _EstudiosRepository.ListarComJogos();
+            return Ok(listaEstudios);
+        }
+
         [HttpPost]
         public IActionResult Post(EstudiosDomain novoEstudio)
         {

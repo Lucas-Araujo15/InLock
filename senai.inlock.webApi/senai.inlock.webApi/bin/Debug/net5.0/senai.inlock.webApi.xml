@@ -35,6 +35,12 @@
             <param name="id">ID do estúdio que será listado</param>
             <returns>Objeto EstudiosDomain que foi encontrado</returns>
         </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IEstudiosRepository.ListarComJogos">
+            <summary>
+            Lista todos os estúdios e inclui a lista de jogos daquele determinado estúdio
+            </summary>
+            <returns>Lista de estúdios</returns>
+        </member>
         <member name="M:senai.inlock.webApi.Interfaces.IJogosRepository.Cadastrar(senai.inlock.webApi.Domains.JogosDomain)">
             <summary>
             Cadastra um novo jogo

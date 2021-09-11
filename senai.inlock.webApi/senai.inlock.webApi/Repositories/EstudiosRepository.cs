@@ -62,6 +62,70 @@ namespace senai.inlock.webApi.Repositories
             }
         }
 
+        public List<EstudiosDomain> ListarComJogos()
+        {
+            List<EstudiosDomain> listaEstudios = new List<EstudiosDomain>();
+
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                string querySelectALL = "SELECT Estudios.IdEstudio, Estudios.NomeEstudio FROM Estudios";
+
+                con.Open();
+
+                SqlDataReader rdr;
+
+                using (SqlCommand cmd = new SqlCommand(querySelectALL, con))
+                {
+                    
+                    rdr = cmd.ExecuteReader();
+
+                    while (rdr.Read())
+                    {
+                        List<JogosDomain> jogosEstudio = new List<JogosDomain>();
+
+                        EstudiosDomain Estudio = new EstudiosDomain()
+                        {
+                            IdEstudio = Convert.ToInt32(rdr[0]),
+                            NomeEstudio = rdr[1].ToString()
+                        };
+
+                        using (SqlConnection connection = new SqlConnection(stringConexao))
+                        {
+                            string query = "SELECT IdJogo, NomeJogo, DescricaoJogo, DataLancamento, ValorJogo FROM Jogos WHERE IdEstudio = @IdEstudio";
+
+                            connection.Open();
+
+                            SqlDataReader reader;
+
+                            using (SqlCommand command = new SqlCommand(query, connection))
+                            {
+                                command.Parameters.AddWithValue("@IdEstudio", Estudio.IdEstudio);
+                                reader = command.ExecuteReader();
+
+                                while (reader.Read())
+                                {
+                                    JogosDomain Jogo = new JogosDomain()
+                                    {
+                                        IdJogo = Convert.ToInt32(reader[0]),
+                                        NomeJogo = reader[1].ToString(),
+                                        DescricaoJogo = reader[2].ToString(),
+                                        DataLancamento = Convert.ToDateTime(reader[3]),
+                                        ValorJogo = Convert.ToDecimal(reader[4]),
+                                    };
+
+                                    jogosEstudio.Add(Jogo);
+                                }
+                            }
+                        }
+                        Estudio.listaDeJogos = jogosEstudio;
+
+                        listaEstudios.Add(Estudio);
+                    }
+                }
+            }
+            return listaEstudios;
+        }
+
         public EstudiosDomain ListarPorId(int id)
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
